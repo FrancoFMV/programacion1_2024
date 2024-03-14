@@ -225,11 +225,26 @@ public class practica0 {
         for(int i=1; i<=n;i++){
             if (i%2==0){
                 suma+=i;
-                System.out.println("i "+i);
                 System.out.println("suma "+ suma);
             }
         }
         return suma;
+    }
+
+    public static void ejercicio12(){
+        Scanner numSc = new Scanner(System.in);
+        System.out.print("Ingrese un numero: ");
+        double num = numSc.nextDouble();
+        System.out.print("Ingrese una potencia: ");
+        int pot = numSc.nextInt();
+        System.out.println("El resultado es: "+potencia(num, pot));
+    }
+    public static double potencia(double x, int a){
+        double pot = 1.0;
+        for(int i=1; i<a; i++){
+            pot *=x;
+        }
+        return pot;
     }
 
     public static void main(String[] args) {
@@ -244,6 +259,7 @@ public class practica0 {
         // ejercicio9();
         // ejercicio9_altern();
         // ejercicio10();
-        ejercicio11();
+        // ejercicio11();
+        ejercicio12();
     }
 }
