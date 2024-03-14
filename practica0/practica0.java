@@ -249,8 +249,20 @@ public class practica0 {
     }
 
     public static void ejercicio13(){
-        
+        Scanner numSc = new Scanner(System.in);
+		System.out.print("Ingrese su número y veamos su factorial: ");
+		int num = numSc.nextInt();
+		System.out.println("El resultado es: "+factorial(num));
     }
+    public static int factorial(int n){
+		int result=1;
+		for(int i=1; i<=n; i++){
+			result*=i;
+			// System.out.println(i);
+		}
+
+		return result;
+	}
  
     public static void main(String[] args) {
         // ejercicio1();
