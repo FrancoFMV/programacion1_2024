@@ -241,12 +241,17 @@ public class practica0 {
     }
     public static double potencia(double x, int a){
         double pot = 1.0;
-        for(int i=1; i<a; i++){
+        for(int i=0; i<a; i++){
             pot *=x;
         }
         return pot;
+        //Una forma mas facil seria escribiendo directamente return Math.pow(x, a);
     }
 
+    public static void ejercicio13(){
+        
+    }
+ 
     public static void main(String[] args) {
         // ejercicio1();
         // ejercicio2();
@@ -260,6 +265,7 @@ public class practica0 {
         // ejercicio9_altern();
         // ejercicio10();
         // ejercicio11();
-        ejercicio12();
+        // ejercicio12();
+        ejercicio13();
     }
 }
