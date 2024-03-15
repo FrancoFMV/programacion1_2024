@@ -1,4 +1,5 @@
 package clase2;
+import java.util.Random;
 import java.util.Scanner;
 @SuppressWarnings("resource")
 
@@ -98,13 +99,43 @@ public class EjDeFunciones {
 		System.out.println("Tienen "+divisoresComun(num1, num2)+" divisores en común");
 	}
 	public static int divisoresComun(int a, int b){
-		int cont=1;
+		int cont=0;
 		for(int i =1;i<=a;i++){
 			if(b%i==0 && a%i==0 )
 				cont++;
 		}
 		return cont;
 	}
+
+	public static void ej7(){
+        Scanner scanner = new Scanner(System.in);
+        int numeroPensado = pensarNumero();
+        int intentos = 0;
+
+        System.out.println("Adivina el número que estoy pensando (entre 1 y 10)");
+
+        while (intentos < 3) {
+            System.out.print("Intento " + (intentos + 1) + ": ");
+            int intento = scanner.nextInt();
+            
+            if (intento == numeroPensado) {
+                System.out.println("¡Felicidades! ¡Has adivinado el número!");
+                return;
+            } else {
+                System.out.println("¡Incorrecto! Sigue intentando.");
+            }
+            
+            intentos++;
+        }
+
+        System.out.println("Lo siento, has agotado tus intentos. El número era: " + numeroPensado);
+    }
+
+    public static int pensarNumero() {
+        Random random = new Random();
+        return random.nextInt(10) + 1;
+    }
+
 	public static void main(String[] args) {
 		// ej1();
 		// ej2();
@@ -113,6 +144,7 @@ public class EjDeFunciones {
 		// ej5();
 		// ej5_altern();
 		// ej6();
+		ej7();
 	}
 
 }
