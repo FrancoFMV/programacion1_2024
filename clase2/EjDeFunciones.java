@@ -57,15 +57,62 @@ public class EjDeFunciones {
 			result*=i;
 			// System.out.println(i);
 		}
-
 		return result;
 	}
 
+	
+	public static void ej5(){
+		Scanner numSc = new Scanner(System.in);
+		System.out.print("Ingrese su número y veamos cuantos digitos tiene: ");
+		int num = numSc.nextInt();
+		System.out.println("Tiene "+cantDigitos(num)+" digitos");
+	}
+	public static int cantDigitos(int n){
+		int digitos = 0;
+		while (n != 0) {
+			n = n / 10;
+			digitos++;
+		}
+		return digitos;
+	}
+	
+	public static void ej5_altern(){
+		Scanner numSc = new Scanner(System.in);
+		System.out.print("Ingrese su número y veamos cuantos digitos tiene: ");
+		int num = numSc.nextInt();
+		System.out.println("Tiene "+contarDigitos(num)+" digitos");
+	}
+	public static int contarDigitos(int numero) {
+        // Convertir el número a una cadena de caracteres
+        String numeroComoString = String.valueOf(numero);
+        // Obtener la longitud de la cadena, que es igual a la cantidad de dígitos
+        return numeroComoString.length();
+    }
+
+	public static void ej6(){
+		Scanner numSc = new Scanner(System.in);
+		System.out.print("Ingrese el primer numero: ");
+		int num1 = numSc.nextInt();
+		System.out.print("Ingrese el segundo numero: ");
+		int num2 = numSc.nextInt();
+		System.out.println("Tienen "+divisoresComun(num1, num2)+" divisores en común");
+	}
+	public static int divisoresComun(int a, int b){
+		int cont=1;
+		for(int i =1;i<=a;i++){
+			if(b%i==0 && a%i==0 )
+				cont++;
+		}
+		return cont;
+	}
 	public static void main(String[] args) {
 		// ej1();
 		// ej2();
 		// ej3();
-		ej4();
+		// ej4();
+		// ej5();
+		// ej5_altern();
+		// ej6();
 	}
 
 }
