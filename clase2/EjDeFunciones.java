@@ -126,15 +126,15 @@ public class EjDeFunciones {
             }
             
             intentos++;
-        }
+	}	
 
         System.out.println("Lo siento, has agotado tus intentos. El número era: " + numeroPensado);
-    }
+	}	
 
-    public static int pensarNumero() {
-        Random random = new Random();
-        return random.nextInt(10) + 1;
-    }
+	public static int pensarNumero() {
+	Random random = new Random();
+	return random.nextInt(10) + 1;
+	}
 
 	public static void main(String[] args) {
 		// ej1();
