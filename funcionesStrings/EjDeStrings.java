@@ -1,4 +1,4 @@
-package clase2;
+package funcionesStrings;
 import java.util.Scanner;
 @SuppressWarnings("resource")
 

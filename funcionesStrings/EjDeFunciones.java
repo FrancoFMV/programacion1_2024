@@ -1,4 +1,4 @@
-package clase2;
+package funcionesStrings;
 
 import java.util.Random;
 import java.util.Scanner;
