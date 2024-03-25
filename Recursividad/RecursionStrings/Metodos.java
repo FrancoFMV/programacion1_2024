@@ -26,7 +26,6 @@ public class Metodos {
 			return s;
 		}
 		return reverso(s.substring(1))+s.charAt(0);
-	
 	}
 	
 	
