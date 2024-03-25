@@ -28,6 +28,26 @@ public class Pruebas {
 		// int b[] = Metodos.agregarAtras(a, 5);
 		// Metodos.imprimir(b);
 
-		Metodos.quitar(a, 0); // ej4
+		// System.out.print("Array original: "); // ej4
+		// Metodos.imprimir(a);
+		// System.out.print("\nArray actual: ");
+		// int b[] = Metodos.quitar(a, 2);
+		// Metodos.imprimir(b);
+
+		// System.out.print("Array original: "); // ej5
+		// Metodos.imprimir(a);
+		// System.out.print("\nArray actual: ");
+		// int b[] = Metodos.reverso(a);
+		// Metodos.imprimir(b);
+
+		// Metodos.revertir(a);  //ej6
+
+		// System.out.print("Array original: "); // ej7
+		// Metodos.imprimir(a);
+		// System.out.print("\nArray actual: ");
+		// int b[] = Metodos.opuestos(a);
+		// Metodos.imprimir(b);
+
+		// Metodos.oponer(a);  //ej8
 	}
 }

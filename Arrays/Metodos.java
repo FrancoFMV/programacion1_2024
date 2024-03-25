@@ -42,7 +42,46 @@ public class Metodos {
 	}
 
 	public static int[] quitar(int[] a, int pos) { // ej4
+		int[] b = new int[a.length - 1];
+		for (int i = 0, j =  0; i < a.length; i++) {
+			if (i != pos) {
+				b[j] = a[i];
+				j++;
+				// System.out.println(b[j-1]);/*Linea de prueba*/
+			}
+		}
+		return b;
+	}
 
-		return a;
+	public static int[] reverso(int[] a){  //ej5
+		int[] b = new int[a.length];
+		for (int i = 0; i < a.length; i++){
+			b[i] = a[a.length - 1 - i];
+		}
+		return b;
+	}
+
+	public static void revertir(int[] a){  //ej6
+		int[] b = new int[a.length];
+		for (int i = 0; i < a.length; i++){
+			b[i] = a[a.length - 1 - i];
+			System.out.println(b[i]);
+		}
+	}
+
+	public static int[] opuestos(int[] a){  //ej7
+		int[] b = new int[a.length];
+		for(int i = 0; i<a.length; i++){
+			b[i] = -a[i];
+		}
+
+		return b;
+	}
+
+	public static void oponer(int[] a){
+		for (int i = 0; i < a.length; i++){
+			a[i] = -a[i];
+			System.out.println(a[i]);
+		}
 	}
 }
